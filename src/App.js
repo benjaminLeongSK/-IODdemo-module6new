@@ -9,6 +9,7 @@ class App extends React.Component {
       <>
         <Greetings />
         <Emoji />
+        <Calculator />
       </>
     )
   }
