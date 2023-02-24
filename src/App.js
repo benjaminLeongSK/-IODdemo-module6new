@@ -3,9 +3,8 @@ import Greetings from './Greetings';
 
 class App extends React.Component {
   render() {
-    const yourName = "JohnnySins";
 
-    return <Greetings name={yourName}/>
+    return <Greetings />
   }
 };
 
