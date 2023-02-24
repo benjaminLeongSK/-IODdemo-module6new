@@ -1,8 +1,12 @@
+import React from 'react';
+import Greetings from './Greetings';
 
-function App() {
-  return (
-    <>hiya</>
-  );
-}
+class App extends React.Component {
+  render() {
+    const yourName = "JohnnySins";
 
-export default App;
+    return <Greetings name={yourName}/>
+  }
+};
+
+export default App
