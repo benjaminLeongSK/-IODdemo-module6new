@@ -1,25 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class Greetings extends React.Component {
+const Greetings = () => {
+    const [name, setName] = useState('World')
 
-    constructor(props) {
-        super(props);
-        this.state = { name: "Johnny Sins" };
-        this.handleChange = this.handleChange.bind(this);
+    const handleClick = () => {
+        setName('Johnny Sins')
     }
 
-    handleChange() {
-        return this.setState({name: "Elon Musk"})
-    }
-
-    render() {
-        return (
-        <div>
-            <h2>Hello, { this.state.name }</h2>
-            <button onClick={this.handleChange}>Click to change Name</button>
-        </div> 
-        )
-    }
+    return ( 
+        <>
+            <p>Hello { name } !</p>
+            <button onClick={handleClick}>Click to change Name</button>
+        </>
+     );
 }
-
+ 
 export default Greetings;
